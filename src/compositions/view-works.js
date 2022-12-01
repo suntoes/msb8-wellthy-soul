@@ -134,6 +134,7 @@ const ViewWorks = () => {
 
   return (
     <Box
+      overflowX="clip"
       id="our-work"
       transition="all .5ms"
       bgImage="url(images/background-pattern-02a.png)"

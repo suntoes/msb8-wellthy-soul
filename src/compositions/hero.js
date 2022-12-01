@@ -6,6 +6,7 @@ import Delayed from '../components/delayed'
 const Hero = () => (
   <>
     <Box
+      overflowX="clip"
       position="absolute"
       zIndex={-1}
       w="full"

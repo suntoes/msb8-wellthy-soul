@@ -23,7 +23,6 @@ const AbstractTab = ({ title, index }) => {
         : index
     const radiusSet = borderRadiusList[_index]
 
-    console.log(title, radiusSet, _index)
     return {
       borderTopLeftRadius: radiusSet[0],
       borderTopRightRadius: radiusSet[1],
@@ -37,13 +36,17 @@ const AbstractTab = ({ title, index }) => {
   const boxSize = color === 'blue' ? [15, 30] : [10, 20]
   const flexDirection = index % 2 ? 'row-reverse' : 'row'
   const ml = index % 2 ? boxSize.map(n => -n) : null
-  const mr = index % 2 ? null :  boxSize.map(n => -n)
+  const mr = index % 2 ? null : boxSize.map(n => -n)
 
   const stickLengthList = [
-    '60%',  '60%',
-    '40%',  '40%',
-    '100%', '100%',
-    '75%', '75%'
+    '60%',
+    '60%',
+    '40%',
+    '40%',
+    '100%',
+    '100%',
+    '75%',
+    '75%'
   ]
   const getStickLength = () => {
     const _index =
@@ -62,8 +65,8 @@ const AbstractTab = ({ title, index }) => {
         flexDirection={flexDirection}
         alignItems="center"
       >
-        <Delayed 
-          from={flexDirection === "row" ? "right" : "left"}
+        <Delayed
+          from={flexDirection === 'row' ? 'right' : 'left'}
           onView={true}
           fromOpaque={false}
           style={{ zIndex: 1, width: '100%' }}
@@ -72,16 +75,20 @@ const AbstractTab = ({ title, index }) => {
             display="flex"
             flexDirection={flexDirection}
             alignItems="center"
-            justifyContent={flexDirection === "row" ? "end" : "start"}
+            justifyContent={flexDirection === 'row' ? 'end' : 'start'}
           >
             <Box
-              ml={ml ? {base: ml[0]+"px", md: ml[1]+"px"} : null}
-              mr={mr ? {base: mr[0]+"px", md: mr[1]+"px"} : null}
+              ml={ml ? { base: ml[0] + 'px', md: ml[1] + 'px' } : null}
+              mr={mr ? { base: mr[0] + 'px', md: mr[1] + 'px' } : null}
               bg={color}
-              boxSize={{base: boxSize[0]+"px", md: boxSize[1]+"px"}}
+              boxSize={{ base: boxSize[0] + 'px', md: boxSize[1] + 'px' }}
               borderRadius="full"
             />
-            <Box bg={color} h={{base: "7px", md: "10px"}} w={getStickLength()} />
+            <Box
+              bg={color}
+              h={{ base: '7px', md: '10px' }}
+              w={getStickLength()}
+            />
           </Box>
         </Delayed>
       </Box>
@@ -91,11 +98,16 @@ const AbstractTab = ({ title, index }) => {
         alignItems="center"
         justifyContent="center"
         py={3}
-        w={{base: "80%", md: "70%"}}
+        w={{ base: '80%', md: '70%' }}
         bg={color}
         {...getBorderRadiusProps()}
       >
-        <Text textAlign="center" color="white" fontWeight={700} fontSize={[14, 20, 22, 25, 27]}>
+        <Text
+          textAlign="center"
+          color="white"
+          fontWeight={700}
+          fontSize={[14, 20, 22, 25, 27]}
+        >
           {title}
         </Text>
       </Box>

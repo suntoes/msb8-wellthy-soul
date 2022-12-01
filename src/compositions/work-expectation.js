@@ -37,6 +37,7 @@ const expectationList = [
 
 const WorkExpectation = () => (
   <Box
+    overflowX="clip"
     zIndex={0}
     w="full"
     my="-330px"

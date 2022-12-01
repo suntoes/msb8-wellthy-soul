@@ -11,6 +11,7 @@ const DelayedImage = ({ src }) => (
 const WhyBluesky = () => (
   <>
     <Box
+      overflowX="clip"
       id="why-bluesky"
       bgImage="url(images/background-asset.png)"
       bgPosition={{ base: 'center', xl: 'right' }}

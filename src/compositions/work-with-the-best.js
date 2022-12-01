@@ -12,6 +12,7 @@ import Delayed from '../components/delayed'
 
 const WorkWithTheBest = () => (
   <Box
+    overflowX="clip"
     bgImage="url(images/background-asset-01.png)"
     bgPosition={{ base: 'center', xl: 'left' }}
     bgRepeat="no-repeat"
