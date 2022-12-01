@@ -135,7 +135,7 @@ const ViewWorks = () => {
       bgRepeat="no-repeat"
       bgSize="1363px 100%"
       py="20px"
-      my="-50px"
+      my="-130px"
       mb="100px"
       w="full"
     >
@@ -191,7 +191,7 @@ const ViewWorks = () => {
                     }
                     color="white"
                     fontWeight={500}
-                    fontSize={[8, 11, 15, 18, 18]}
+                    fontSize={[7, 10, 14, 18, 18]}
                   >
                     {title}
                   </Heading>
@@ -207,7 +207,7 @@ const ViewWorks = () => {
             </Stack>
             </Delayed>
 
-            <Delayed from="down" fromOpaque={false} onView={true} delay={0.2}>
+            <Delayed from="right" fromOpaque={false} onView={true} delay={0.2}>
             <AnimatedWorksGrid index={listIndex} />
             </Delayed>
           </Container>

@@ -44,18 +44,18 @@ const Navbar = () => (
           aria-label="Options"
         />
         <MenuList>
-          <a href="/#why-bluesky">
+          <Link href="/#why-bluesky">
             <MenuItem>Why BlueSky</MenuItem>
-          </a>
-          <a href="/#our-work">
+          </Link>
+          <Link href="/#our-work">
             <MenuItem>Our Work</MenuItem>
-          </a>
-          <a href="/#our-process">
+          </Link>
+          <Link href="/#our-process">
             <MenuItem>Our Process</MenuItem>
-          </a>
-          <a href="/#what-clients-say">
+          </Link>
+          <Link href="/#what-clients-say">
             <MenuItem>What Clients Say</MenuItem>
-          </a>
+          </Link>
         </MenuList>
       </Menu>
     </Box>
