@@ -42,7 +42,7 @@ const DiscoverCapabilities = () => {
   }, [])
 
   return (
-  <Box ref={containerRef} w="full">
+  <Box ref={containerRef} w="full" mb={120}>
     <motion.div
       initial={{y: 85, rotate: 0}}
       whileInView={{y: 105, rotate: 5, transition: {delay: 1.5}}}
