@@ -87,11 +87,15 @@ const DiscoverCapabilities = () => {
           <Stack flex={1} spacing={{ base: 2, md: 3 }}>
             {capabilityList.map((title, index) =>
               index % 2 ? (
-                <Fragment key={"capability-" + (index+1)}></Fragment>
+                <Fragment key={'capability-' + (index + 1)}></Fragment>
               ) : title ? (
-                <AbstractTab key={"capability-" + (index+1)} title={title} index={index} />
+                <AbstractTab
+                  key={'capability-' + (index + 1)}
+                  title={title}
+                  index={index}
+                />
               ) : (
-                <Fragment key={"capability-" + (index+1)}></Fragment>
+                <Fragment key={'capability-' + (index + 1)}></Fragment>
               )
             )}
           </Stack>
@@ -100,12 +104,16 @@ const DiscoverCapabilities = () => {
             {capabilityList.map((title, index) =>
               index % 2 ? (
                 title ? (
-                  <AbstractTab key={"capability-" + (index+1)} title={title} index={index} />
+                  <AbstractTab
+                    key={'capability-' + (index + 1)}
+                    title={title}
+                    index={index}
+                  />
                 ) : (
-                  <Fragment key={"capability-" + (index+1)}></Fragment>
+                  <Fragment key={'capability-' + (index + 1)}></Fragment>
                 )
               ) : (
-                <Fragment key={"capability-" + (index+1)}></Fragment>
+                <Fragment key={'capability-' + (index + 1)}></Fragment>
               )
             )}
           </Stack>
