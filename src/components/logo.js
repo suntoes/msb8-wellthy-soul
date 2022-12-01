@@ -1,4 +1,4 @@
-import { Image, Link} from '@chakra-ui/react'
+import { Image, Link } from '@chakra-ui/react'
 
 const Logo = props => (
   <Link href="/#">

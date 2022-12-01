@@ -30,7 +30,8 @@ const Delayed = ({
   delay,
   children,
   onView,
-  hoverable
+  hoverable,
+  style
 }) => {
   const animate = { x: 0, y: 0, opacity: 1 }
   const transition = { duration: 0.8, delay: delay || 0 }
@@ -46,6 +47,7 @@ const Delayed = ({
       exit={{ ...getDirection(from), opacity: 0 }}
       whileHover={{ y: hoverable ? -20 : 0 }}
       viewport={{ once: true, amount: 0.8 }}
+      style={style}
     >
       {children}
     </motion.div>
