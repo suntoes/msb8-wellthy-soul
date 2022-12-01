@@ -9,8 +9,7 @@ const Hero = () => (
       position="absolute"
       zIndex={-1}
       w="full"
-      h="100vh"
-      maxH="930px"
+      h="930px"
       bgImage='url("images/background-pattern.png")'
       bgRepeat="no-repeat"
       bgPosition="center"
@@ -20,7 +19,6 @@ const Hero = () => (
     <Box w="full">
       <Container maxW="1410px">
         <Navbar />
-        <Delayed>
           <Box
             mt={['80px', 90, 100]}
             display={{ base: 'block', lg: 'none' }}
@@ -31,11 +29,13 @@ const Hero = () => (
               fontSize={['38px', '50px', '54px', '58px', '60px']}
               color="white"
             >
+              <Delayed>
               INCREASE{' '}
               <span style={{ color: 'var(--chakra-colors-black)' }}>
                 SALES AND GENERATE
               </span>{' '}
               MORE LEADS
+              </Delayed>
             </Heading>
           </Box>
 
@@ -51,17 +51,21 @@ const Hero = () => (
                   fontSize={['48px', '50px', '54px', '58px', '60px']}
                   color="white"
                 >
+                  <Delayed>
                   INCREASE{' '}
                   <span style={{ color: 'var(--chakra-colors-black)' }}>
                     SALES AND GENERATE
                   </span>{' '}
                   MORE LEADS
+                  </Delayed>
                 </Heading>
               </Box>
 
               <Stack direction="column">
                 <Box w={{ base: '60%', md: '50%' }} fontSize={{base: 18, md: 24}} color="white">
+                  <Delayed delay={0.2}>
                   High converting websites and landing pages
+                  </Delayed>
                 </Box>
                 <Box
                   display={{ base: 'block', md: 'none' }}
@@ -73,10 +77,13 @@ const Hero = () => (
                     sm: 'translateY(-20%)'
                   }}
                 >
+                  <Delayed from="right" delay={0.6}>
                   <Image src="images/tv-web-asset.png" />
+                  </Delayed>
                 </Box>
               </Stack>
 
+              <Delayed delay={0.4}>
               <Stack direction={{ base: 'column', xl: 'row' }} pt={5}>
                 <Button
                   variant="bluesky"
@@ -108,6 +115,7 @@ const Hero = () => (
                   SCHEDULE A CALL
                 </Button>
               </Stack>
+            </Delayed>
             </Stack>
 
             <Box
@@ -115,10 +123,11 @@ const Hero = () => (
               alignSelf="end"
               w={{ md: '70%', lg: '100%' }}
             >
+              <Delayed from="up" delay={0.6}>
               <Image src="images/tv-web-asset.png" />
+              </Delayed>
             </Box>
           </Stack>
-        </Delayed>
       </Container>
     </Box>
   </>
