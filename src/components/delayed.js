@@ -24,6 +24,7 @@ const getDirection = str => {
 }
 
 const Delayed = ({
+  key,
   from,
   fromOpaque = true,
   delay,
@@ -39,8 +40,10 @@ const Delayed = ({
 
   return (
     <motion.div
+      key={key}
       initial={{ ...getDirection(from), opacity: fromOpaque ? 0 : 1 }}
       {...animateProps}
+      exit={{ ...getDirection(from), opacity: 0 }}
       whileHover={{ y: hoverable ? -20 : 0 }}
       viewport={{ once: true, amount: 0.8 }}
     >

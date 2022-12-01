@@ -7,6 +7,7 @@ import Hero from './compositions/hero'
 import WhyBluesky from './compositions/why-bluesky'
 import WorkExpectation from './compositions/work-expectation'
 import WorkWithTheBest from './compositions/work-with-the-best'
+import ViewWorks from './compositions/view-works'
 
 const App = () => (
   <Chakra>
@@ -15,6 +16,7 @@ const App = () => (
     <WhyBluesky />
     <WorkExpectation />
     <WorkWithTheBest />
+    <ViewWorks />
   </Chakra>
 )
 

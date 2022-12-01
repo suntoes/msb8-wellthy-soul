@@ -45,6 +45,7 @@ const components = {
 const colors = {
   blue: '#0885c3',
   blue2: '#3399cc',
+  darkBlue: '#032845',
   orange: '#faa31c',
   yellow: '#fedd00',
   purple: '#9e5ad1',
