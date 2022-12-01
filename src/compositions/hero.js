@@ -1,54 +1,125 @@
 import { Box, Button, Container, Image, Heading, Stack } from '@chakra-ui/react'
 
 import Navbar from '../components/navbar'
+import Delayed from '../components/delayed'
 
 const Hero = () => (
   <>
-    <Container position="absolute" maxW="100vw" centerContent>
-      <Container px={5} maxW="1410px">
+    <Box
+      position="absolute"
+      zIndex={-1}
+      w="full"
+      h="100vh"
+      maxH="930px"
+      bgImage='url("images/background-pattern.png")'
+      bgRepeat="no-repeat"
+      bgPosition="center"
+      bgSize={{ base: '1920px 930px', '2xl': '100% 930px' }}
+    />
+
+    <Box w="full">
+      <Container maxW="1410px">
         <Navbar />
-
-        <Stack direction="row">
-          <Stack mt={130} spacing={5}>
-            <Box w="90%">
-              <Heading fontWeight={800} fontSize="60px" color="white">
-                INCREASE{' '}
-                <span style={{ color: 'var(--chakra-colors-black)' }}>
-                  SALES AND GENERATE
-                </span>{' '}
-                MORE LEADS
-              </Heading>
-            </Box>
-
-            <Box w="50%" fontSize={24} color="white">
-              High converting websites and landing pages
-            </Box>
-
-            <Stack direction="row">
-            <Button bg="orange" fontSize={24} px={8}>
-              START YOUR DESIGN
-            </Button>
-
-            <Button 
-              rightIcon={<Image w={34} mt={-1} ml={7} src="images/calendar-icon.png" />}
-              bg="yellow" 
-              fontSize={24} 
-              pl={8}
+        <Delayed>
+          <Box
+            mt={['80px', 90, 100]}
+            display={{ base: 'block', lg: 'none' }}
+            w="90%"
+          >
+            <Heading
+              fontWeight={800}
+              fontSize={['38px', '50px', '54px', '58px', '60px']}
+              color="white"
             >
-              SCHEDULE A CALL
-            </Button>
-            </Stack>
-         </Stack>
-
-          <Box w="100%">
-            <Image src="images/tv-web-asset.png" />
+              INCREASE{' '}
+              <span style={{ color: 'var(--chakra-colors-black)' }}>
+                SALES AND GENERATE
+              </span>{' '}
+              MORE LEADS
+            </Heading>
           </Box>
-        </Stack>
-      </Container>
-    </Container>
 
-    <Box>
-      <Image src="images/background-pattern.png" />
+          <Stack
+            mt={{ base: 0, lg: 0 }}
+            align={{ base: 'center', lg: 'start' }}
+            direction="row"
+          >
+            <Stack mt={{ lg: 50, xl: 130 }} w="100%" spacing={5}>
+              <Box display={{ base: 'none', lg: 'block' }} w="90%">
+                <Heading
+                  fontWeight={800}
+                  fontSize={['48px', '50px', '54px', '58px', '60px']}
+                  color="white"
+                >
+                  INCREASE{' '}
+                  <span style={{ color: 'var(--chakra-colors-black)' }}>
+                    SALES AND GENERATE
+                  </span>{' '}
+                  MORE LEADS
+                </Heading>
+              </Box>
+
+              <Stack direction="column">
+                <Box w={{ base: '60%', md: '50%' }} fontSize={{base: 18, md: 24}} color="white">
+                  High converting websites and landing pages
+                </Box>
+                <Box
+                  display={{ base: 'block', md: 'none' }}
+                  position="absolute"
+                  alignSelf="end"
+                  w="30%"
+                  transform={{
+                    base: 'translateY(-5vw)',
+                    sm: 'translateY(-20%)'
+                  }}
+                >
+                  <Image src="images/tv-web-asset.png" />
+                </Box>
+              </Stack>
+
+              <Stack direction={{ base: 'column', xl: 'row' }} pt={5}>
+                <Button
+                  variant="bluesky"
+                  bg="orange"
+                  fontSize={{base: 18, md: 24}}
+                  px={[6, 8]}
+                  w={['100%', 'fit-content']}
+                  maxW={{base: 250, md: 320}}
+                >
+                  START YOUR DESIGN
+                </Button>
+
+                <Button
+                  variant="bluesky"
+                  rightIcon={
+                    <Image
+                      w={34}
+                      mt={-1}
+                      ml={[0, 7]}
+                      src="images/calendar-icon.png"
+                    />
+                  }
+                  bg="yellow"
+                  fontSize={{base: 18, md: 24}}
+                  pl={[4, 8]}
+                  w={['100%', 'fit-content']}
+                  maxW={{base: 250, md: 320}}
+                >
+                  SCHEDULE A CALL
+                </Button>
+              </Stack>
+            </Stack>
+
+            <Box
+              display={{ base: 'none', md: 'block' }}
+              alignSelf="end"
+              w={{ md: '70%', lg: '100%' }}
+            >
+              <Image src="images/tv-web-asset.png" />
+            </Box>
+          </Stack>
+        </Delayed>
+      </Container>
     </Box>
   </>
 )

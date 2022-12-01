@@ -21,25 +21,26 @@ const Navbar = () => (
     <Logo />
 
     <Stack
-      direction={{ base: 'column', md: 'row' }}
-      display={{ base: 'none', md: 'flex' }}
-      width={{ base: 'full', md: 'auto' }}
+      direction={{ base: 'column', lg: 'row' }}
+      display={{ base: 'none', lg: 'flex' }}
+      width={{ base: 'full', lg: 'auto' }}
       alignItems="center"
       fontWeight={600}
       color="white"
       spacing={12}
-      mt={{ base: 4, md: 0 }}
+      mt={{ base: 4, lg: 0 }}
     >
       <Link href="/#why-bluesky">Why BlueSky</Link>
       <Link href="/#our-work">Our Work</Link>
       <Link href="/#our-process">Our Process</Link>
       <Link href="/#what-clients-say">What Clients Say</Link>
     </Stack>
-    <Box display={{ base: 'flex', md: 'none' }} alignItems="center">
+    <Box display={{ base: 'flex', lg: 'none' }} alignItems="center">
       <Menu isLazy id="navbar-menu">
         <MenuButton
           as={IconButton}
           icon={<HamburgerIcon />}
+          variant="ghost"
           aria-label="Options"
         />
         <MenuList>
