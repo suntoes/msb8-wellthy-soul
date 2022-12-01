@@ -40,7 +40,8 @@ const Navbar = () => (
         <MenuButton
           as={IconButton}
           icon={<HamburgerIcon />}
-          variant="ghost"
+          bg="#ffffff55"
+          variant="solid"
           aria-label="Options"
         />
         <MenuList>
