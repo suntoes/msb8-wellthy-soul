@@ -3,6 +3,15 @@ import { Global } from '@emotion/react'
 const Fonts = () => (
   <Global
     styles={`
+    html,
+    body {
+      /* Safari compatibility */
+      overflow-x: hidden;
+      height: 100%;
+      width: 100%;
+      transform: translate3d(0
+    }
+
     @font-face {
       font-family: 'Montserrat';
       font-weight: 700;
