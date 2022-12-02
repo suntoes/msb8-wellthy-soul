@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Box } from '@chakra-ui/react'
+
 import Chakra from './components/chakra'
 import Fonts from './components/fonts'
 
@@ -21,8 +23,14 @@ const App = () => (
     <WorkExpectation />
     <WorkWithTheBest />
     <ViewWorks />
-    <DiscoverCapabilities />
-    <OurPrecess />
+    <Box
+      position="relative"
+      zIndex={-1}
+      bgImage="url(images/background-asset-02.png)"
+    >
+      <DiscoverCapabilities />
+      <OurPrecess />
+    </Box>
     <Client />
     <Contact />
   </Chakra>
