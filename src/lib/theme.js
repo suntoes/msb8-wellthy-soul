@@ -15,13 +15,6 @@ const fonts = {
 }
 
 const components = {
-  Image: {
-    variants: {
-      shadowed: {
-        filter: 'drop-shadow(10px 10px 5px #00000066)'
-      }
-    }
-  },
   Button: {
     variants: {
       bluesky: {
@@ -51,6 +44,7 @@ const colors = {
   violet: '#6c11b0',
   purple: '#9e5ad1',
   purple2: '#b892ee',
+  purple3: '#8561cd',
   red: '#e91358'
 }
 

@@ -53,7 +53,7 @@ const DiscoverCapabilities = () => {
     <Box ref={containerRef} w="full" mb={120} overflowX="clip">
       <motion.div
         initial={{ y: 85, rotate: 0 }}
-        whileInView={{ y: 105, rotate: 5, transition: { delay: 1.5 } }}
+        whileInView={{ y: 105, rotate: 5, transition: { delay: 0.5 } }}
       >
         <Box
           position="absolute"
@@ -77,7 +77,7 @@ const DiscoverCapabilities = () => {
           DISCOVER
           <motion.div
             initial={{ y: 0, rotate: 0 }}
-            whileInView={{ y: -5, rotate: 5, transition: { delay: 1.5 } }}
+            whileInView={{ y: -5, rotate: 5, transition: { delay: 0.5 } }}
           >
             <Text color="blue">OUR CAPABILITIES</Text>
           </motion.div>

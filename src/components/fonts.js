@@ -6,7 +6,6 @@ const Fonts = () => (
     @font-face {
       font-family: 'Montserrat';
       font-weight: 700;
-      font-display: swap;
       src: url('fonts/Montserrat-Bold.ttf') format('truetype');
     }
     @font-face {

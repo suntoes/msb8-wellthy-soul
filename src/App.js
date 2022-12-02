@@ -10,6 +10,8 @@ import WorkWithTheBest from './compositions/work-with-the-best'
 import ViewWorks from './compositions/view-works'
 import DiscoverCapabilities from './compositions/discover-capabilities'
 import OurPrecess from './compositions/our-process'
+import Client from './compositions/client'
+import Contact from './compositions/contact'
 
 const App = () => (
   <Chakra>
@@ -21,6 +23,8 @@ const App = () => (
     <ViewWorks />
     <DiscoverCapabilities />
     <OurPrecess />
+    <Client />
+    <Contact />
   </Chakra>
 )
 
