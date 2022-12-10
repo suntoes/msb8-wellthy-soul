@@ -13,63 +13,34 @@ const Fonts = () => (
     }
 
     @font-face {
-      font-family: 'Montserrat';
-      font-weight: 700;
-      src: url('fonts/Montserrat-Bold.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Poppins';
-      font-weight: 100;
-      font-display: swap;
-      src: url('/fonts/Poppins-Thin.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Poppins';
-      font-weight: 200;
-      font-display: swap;
-      src: url('/fonts/Poppins-ExtraLight.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Poppins';
-      font-weight: 300;
-      font-display: swap;
-      src: url('/fonts/Poppins-Light.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Poppins';
+      font-family: 'MinionPro';
       font-weight: 400;
       font-display: swap;
-      src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+      src: url('/fonts/MinionPro-Regular.otf') format('opentype');
     }
     @font-face {
-      font-family: 'Poppins';
+      font-family: 'MinionPro';
       font-weight: 500;
       font-display: swap;
-      src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+      src: url('/fonts/MinionPro-Medium.otf') format('opentype');
     }
     @font-face {
-      font-family: 'Poppins';
+      font-family: 'MinionPro';
       font-weight: 600;
       font-display: swap;
-      src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+      src: url('/fonts/MinionPro-Semibold.otf') format('opentype');
     }
     @font-face {
-      font-family: 'Poppins';
+      font-family: 'MinionPro';
       font-weight: 700;
       font-display: swap;
-      src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+      src: url('/fonts/MinionPro-Bold.otf') format('opentype');
     }
     @font-face {
-      font-family: 'Poppins';
-      font-weight: 800;
+      font-family: 'MinionPro';
+      font-weight: 750;
       font-display: swap;
-      src: url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Poppins';
-      font-weight: 900;
-      font-display: swap;
-      src: url('/fonts/Poppins-Black.ttf') format('truetype');
+      src: url('/fonts/MinionPro-BoldCn.otf') format('opentype');
     }
     `}
   />

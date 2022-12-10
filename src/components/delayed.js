@@ -14,6 +14,12 @@ const getDirection = str => {
     case 'down':
       result = { y: 50 }
       break
+    case 'down-ccw':
+      result = { y: 50, rotate: 5 }
+      break
+    case 'down-cw':
+      result = { y: 50, rotate: -5 }
+      break
     case 'none':
       result = {}
       break
@@ -29,11 +35,11 @@ const Delayed = ({
   fromOpaque = true,
   delay,
   children,
-  onView,
+  onView = true,
   hoverable,
   style
 }) => {
-  const animate = { x: 0, y: 0, opacity: 1 }
+  const animate = { x: 0, y: 0, opacity: 1, rotate: 0 }
   const transition = { duration: 0.8, delay: delay || 0 }
   const animateProps = onView
     ? { whileInView: { ...animate, transition } }
@@ -44,7 +50,7 @@ const Delayed = ({
       key={key}
       initial={{ ...getDirection(from), opacity: fromOpaque ? 0 : 1 }}
       {...animateProps}
-      exit={{ ...getDirection(from), opacity: 0 }}
+      exit={{ ...getDirection(from), opacity: 0, rotate: 0 }}
       whileHover={{ y: hoverable ? -20 : 0 }}
       viewport={{ once: true, amount: 0.8 }}
       style={style}

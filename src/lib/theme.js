@@ -4,31 +4,38 @@ import { mode } from '@chakra-ui/theme-tools'
 const styles = {
   global: props => ({
     body: {
-      bg: mode('white', 'black')(props)
+      bg: mode('white', 'black')(props),
+      letterSpacing: '.1rem'
     }
   })
 }
 
 const fonts = {
-  heading: `'Poppins', sans-serif`,
-  body: `'Poppins', sans-serif`
+  heading: `'MinionPro', sans-serif`,
+  body: `'MinionPro', sans-serif`
 }
 
 const components = {
   Button: {
     variants: {
-      bluesky: {
+      'gradient-red': {
+        background: 'gradient-red',
         display: 'flex',
-        minHeight: '74px',
+        h: '100%',
+        minHeight: '68px',
         width: 'fit-content',
         align: 'center',
-        border: '4px solid white',
         fontWeight: 700,
-        color: 'black',
-        borderRadius: 10,
+        letterSpacing: '.1rem',
+        color: 'white',
+        paddingX: 6,
+        borderRadius: 12,
+        whiteSpace: 'normal',
         overflow: 'hidden',
+        paddingInlineStart: 0,
+        paddingInlineEnd: 0,
         _hover: {
-          opacity: 1
+          opacity: 0.8
         }
       }
     }
@@ -36,16 +43,12 @@ const components = {
 }
 
 const colors = {
-  blue: '#0885c3',
-  blue2: '#3399cc',
-  darkBlue: '#032845',
-  orange: '#faa31c',
-  yellow: '#fedd00',
-  violet: '#6c11b0',
-  purple: '#9e5ad1',
-  purple2: '#b892ee',
-  purple3: '#8561cd',
-  red: '#e91358'
+  teal: '#125863',
+  pink: '#ec008c',
+  beige: '#c8b7b1',
+  'dark-beige': '#3d3d3d',
+  'light-gray': '#e7e6e4',
+  'gradient-red': 'linear-gradient(to right, #e03e52, #ee7486)'
 }
 
 // These are the default breakpoints
