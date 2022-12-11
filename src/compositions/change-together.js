@@ -51,7 +51,7 @@ const ChangeTogether = () => (
             </Heading>
 
             <SimpleGrid columns={{ base: 2, md: 3 }}>
-              {reduceList.map((text, i) => (
+              {reduceList.sort((a, b) => a.length - b.length).map((text, i) => (
                 <Delayed delay={i % 3 ? 0.2 : i % 2 ? 0.1 : 0}>
                   <Flex key={'reduce-' + i} direction="row" py={[1, 2, 3]}>
                     <Center h={['24px', '28px', '40px']} ml={3} mr={3}>
