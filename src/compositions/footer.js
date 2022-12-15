@@ -1,19 +1,7 @@
-import { useEffect } from 'react'
 
 import { Box, Button, Container, Heading, Stack } from '@chakra-ui/react'
 
-const Expect = () => {
-  useEffect(() => {
-    const script = document.createElement('script')
-
-    script.src = 'https://embed.typeform.com/next/embed.js'
-    script.async = true
-
-    document.body.appendChild(script)
-  }, [])
-
-  return (
-    <>
+const Expect = () => (
       <Box w="full" bg="teal" color="white">
         <Container py={[30, 35, 50]} maxW={1200} align="center">
           <Stack align="center" spacing={[5, 6, 12]}>
@@ -46,15 +34,6 @@ const Expect = () => {
           </Stack>
         </Container>
       </Box>
+ )
 
-      <div
-        data-tf-widget="pAEdzY96"
-        data-tf-opacity="100"
-        data-tf-iframe-props="title=Wellthy Soul Contact Form- Simple"
-        data-tf-hidden="hubspot_utk=,hubspot_page_name=,hubspot_page_url="
-        style={{ width: '100%', height: '100vh', minHeight: '500px' }}
-      ></div>
-    </>
-  )
-}
 export default Expect
