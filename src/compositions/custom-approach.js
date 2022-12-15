@@ -111,22 +111,24 @@ const CustomApproach = () => (
             </Text>
 
             <SimpleGrid columns={2}>
-              {reduceList.sort((a, b) => a.length - b.length).map((text, i) => (
-                <Delayed from="down" delay={i % 2 ? 0.2 : 0}>
-                  <Flex key={'reduce-' + i} direction="row" py={[1, 2, 3]}>
-                    <Center h={['26px', '28px', '40px']} ml={3} mr={3}>
-                      <Image
-                        maxW={['26px', '28px', '40px']}
-                        src={'images/cross-icon.png'}
-                      />
-                    </Center>
+              {reduceList
+                .sort((a, b) => a.length - b.length)
+                .map((text, i) => (
+                  <Delayed from="down" delay={i % 2 ? 0.2 : 0}>
+                    <Flex key={'reduce-' + i} direction="row" py={[1, 2, 3]}>
+                      <Center h={['26px', '28px', '40px']} ml={3} mr={3}>
+                        <Image
+                          maxW={['26px', '28px', '40px']}
+                          src={'images/cross-icon.png'}
+                        />
+                      </Center>
 
-                    <Text flex={1} fontSize={[14, 17, 24]} fontWeight={700}>
-                      {text}
-                    </Text>
-                  </Flex>
-                </Delayed>
-              ))}
+                      <Text flex={1} fontSize={[14, 17, 24]} fontWeight={700}>
+                        {text}
+                      </Text>
+                    </Flex>
+                  </Delayed>
+                ))}
             </SimpleGrid>
           </Box>
         </Flex>

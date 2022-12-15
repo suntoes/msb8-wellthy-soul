@@ -54,17 +54,22 @@ const Hero = () => (
         </Delayed>
 
         <Delayed from="down" delay={0.8}>
-          <Button
-            w="100%"
-            maxW={707}
-            fontSize={[13, 15, 22]}
-            lineHeight={1.5}
-            mb={4}
-            variant="gradient-red"
-            paddingInline={3}
+          <a
+            href="https://form.typeform.com/to/pAEdzY96?typeform-source=trello.com#hubspot_utk=xxxxx&hubspot_page_name=xxxxx&hubspot_page_url=xxxxx"
+            target="_blank"
           >
-            TALK WITH THE WELLTHY SOUL CARE TEAM RIGHT NOW
-          </Button>
+            <Button
+              w="100%"
+              maxW={707}
+              fontSize={[13, 15, 22]}
+              lineHeight={1.5}
+              mb={4}
+              variant="gradient-red"
+              paddingInline={3}
+            >
+              TALK WITH THE WELLTHY SOUL CARE TEAM RIGHT NOW
+            </Button>
+          </a>
         </Delayed>
       </Container>
     </Box>

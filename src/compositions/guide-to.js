@@ -120,14 +120,19 @@ const GuideTo = () => {
             ))}
           </Stack>
           <Delayed from="down">
-            <Button
-              fontSize={[18, 21, 30]}
-              variant="gradient-red"
-              paddingInline={5}
-              mt={7}
+            <a
+              href="https://form.typeform.com/to/pAEdzY96?typeform-source=trello.com#hubspot_utk=xxxxx&hubspot_page_name=xxxxx&hubspot_page_url=xxxxx"
+              target="_blank"
             >
-              YES, I'M READY TO TRANSFORM MY WELLNESS!
-            </Button>
+              <Button
+                fontSize={[18, 21, 30]}
+                variant="gradient-red"
+                paddingInline={5}
+                mt={7}
+              >
+                YES, I'M READY TO TRANSFORM MY WELLNESS!
+              </Button>
+            </a>
           </Delayed>
         </Container>
       </Box>

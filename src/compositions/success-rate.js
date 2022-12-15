@@ -74,15 +74,20 @@ const SuccessRate = () => (
         </Delayed>
 
         <Delayed>
-          <Button
-            maxW={707}
-            fontSize={[24, 28, 40]}
-            mb={4}
-            variant="gradient-red"
-            paddingInline={12}
+          <a
+            href="https://form.typeform.com/to/pAEdzY96?typeform-source=trello.com#hubspot_utk=xxxxx&hubspot_page_name=xxxxx&hubspot_page_url=xxxxx"
+            target="_blank"
           >
-            Schedule My FREE Consultation
-          </Button>
+            <Button
+              maxW={707}
+              fontSize={[24, 28, 40]}
+              mb={4}
+              variant="gradient-red"
+              paddingInline={12}
+            >
+              Schedule My FREE Consultation
+            </Button>
+          </a>
         </Delayed>
       </Container>
     </Box>
