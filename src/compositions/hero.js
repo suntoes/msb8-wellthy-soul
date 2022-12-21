@@ -1,4 +1,7 @@
-import { Box, Button, Container, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Container, Heading, Text } from '@chakra-ui/react'
+
+import { Player, BigPlayButton } from 'video-react'
+import 'video-react/dist/video-react.css'
 
 import Delayed from '../components/delayed'
 
@@ -49,9 +52,18 @@ const Hero = () => (
           </Delayed>
         </Text>
 
-        <Delayed from="down" delay={0.6}>
-          <Image w="100%" maxW={707} my={4} src="images/hero-vid.png" />
-        </Delayed>
+        <Box maxW={['full', 505, 707]}>
+          <Delayed from="down" delay={0.6}>
+            <Box w="1000px" maxW={'full'} my={4}>
+              <Player
+                poster="images/hero-vid.png"
+                src="videos/wellthy-soul-executive-long.mp4"
+              >
+                <BigPlayButton disabled />
+              </Player>
+            </Box>
+          </Delayed>
+        </Box>
 
         <Delayed from="down" delay={0.8}>
           <a
